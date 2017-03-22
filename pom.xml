@@ -10,9 +10,9 @@
 
     <!--PROPERTIES-->
     <properties>
-        <spring.version>4.3.4.RELEASE</spring.version>
+        <spring.version>4.3.7.RELEASE</spring.version>
         <h2.version>1.4.194</h2.version>
-        <servlet.version>3.1.0</servlet.version>
+        <hibernate.version>5.2.9.Final</hibernate.version>
     </properties>
 
     <!--BUILD-->
@@ -32,14 +32,6 @@
 
     <!--DEPENDENCIES-->
     <dependencies>
-
-        <!--SERVLET-->
-        <!-- servlet-api -->
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>${servlet.version}</version>
-        </dependency>
 
 
         <!--SPRING-->
@@ -71,6 +63,14 @@
             <version>${spring.version}</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
+
+
 
         <!--DATABASE-->
         <!-- h2 -->
@@ -80,6 +80,13 @@
             <version>${h2.version}</version>
         </dependency>
 
+
+        <!-- hibernate-core -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>${hibernate.version}</version>
+        </dependency>
 
 
     </dependencies>
